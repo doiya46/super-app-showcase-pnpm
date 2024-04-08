@@ -53,6 +53,9 @@ jobs:
 
       - name: Release
         run: |
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
           git clone https://github.com/doiya46/demo-release.git
           cp -r ./build ./demo-release
-          cd ./demo-release && gh-pages-multi deploy -s build -t ${{ github.ref_name }}
+          cd ./demo-release
+          gh-pages-multi deploy -s build -t ${{ github.ref_name }}
