@@ -47,7 +47,7 @@ jobs:
         run: npm i -g @koumoul/gh-pages-multi
 
       - name: Release
-        run:
-          - git clone https://github.com/doiya46/demo-release.git
-          - cp -r ./build ./demo-release
-          - cd ./demo-release && gh-pages-multi deploy -s build -t ${{ github.ref_name }}
+        run: |
+          git clone https://github.com/doiya46/demo-release.git
+          cp -r ./build ./demo-release
+          cd ./demo-release && gh-pages-multi deploy -s build -t ${{ github.ref_name }}
