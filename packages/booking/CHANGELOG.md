@@ -1,5 +1,12 @@
 # booking
 
+## 1.2.0
+
+### Minor Changes
+
+- 7549556: Demo 2
+- 290f1d2: Demo 5
+
 ## 1.1.0
 
 ### Minor Changes
