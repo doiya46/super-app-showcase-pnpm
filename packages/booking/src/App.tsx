@@ -5,7 +5,7 @@ import MainNavigator from './navigation/MainNavigator';
 import SplashScreen from './components/SplashScreen';
 import ErrorBoundary from './components/ErrorBoundary';
 
-// Test
+// Test 2
 const AuthProvider = React.lazy(() =>
   Federated.importModule('auth', './AuthProvider'),
 );
