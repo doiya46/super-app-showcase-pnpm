@@ -4,6 +4,9 @@
   "license": "MIT",
   "private": true,
   "packageManager": "pnpm@8.9.2",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "start:host": "pnpm --filter host start",
     "start:booking": "pnpm --filter booking start",
@@ -32,6 +35,7 @@
     "check-deps": "pnpm -r check-deps"
   },
   "devDependencies": {
+    "semver": "7.6.0",
     "concurrently": "^7.6.0"
   },
   "dependencies": {
