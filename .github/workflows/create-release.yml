@@ -55,7 +55,7 @@ jobs:
         run: |
           git config --global user.email "you@example.com"
           git config --global user.name "Your Name"
-          git clone https://release-gh-page:${{ secrets.RELEASE_PAT }}@github.com/smarttestpro/smart-mobile.git
+          git clone https://release-gh-page:${{ secrets.RELEASE_PAT }}@${{ secrets.RELEASE_REPO }}
           cp -r ./build ./smart-mobile
           cd ./smart-mobile
           gh-pages-multi deploy -s build -t ${{ github.ref_name }}
