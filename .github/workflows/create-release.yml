@@ -30,7 +30,7 @@ jobs:
           cache: pnpm
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: npm i -g pnpm && pnpm install --frozen-lockfile
 
       - name: Create code-signing.pem
         env:
